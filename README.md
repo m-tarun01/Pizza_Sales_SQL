@@ -55,7 +55,7 @@ sql
 The following SQL queries were developed to answer specific business questions:
 
 -- 1). Retrieve the total number of orders placed --
-```
+``` SQL
 SELECT 
     COUNT(*) AS total_orders
 FROM
@@ -64,7 +64,7 @@ FROM
 
 
 -- 2). Calculate the toal quantity & total revenue generated from pizza sales --
-```
+``` SQL
 SELECT 
     SUM(orders_details.quantity) AS total_quantity,
     ROUND(SUM(orders_details.quantity * pizzas.price),
@@ -76,7 +76,7 @@ FROM
 ```
 
 -- 3). Identify the highest-priced pizza --
-```
+``` SQL
 SELECT 
     pizza_types.name, pizzas.price
 FROM
@@ -89,7 +89,7 @@ LIMIT 1;
 
 
 -- 4). Identify the most common pizza size ordered --
-```
+```SQL
 SELECT 
     pizzas.size, COUNT(orders_details.order_id) AS no_of_ordered
 FROM
@@ -102,7 +102,7 @@ LIMIT 1;
 ```
 
 -- 5). List the top 5 most ordered pizza types along with their quantities --
-```
+```SQL
 SELECT 
     pizza_types.name,
     SUM(orders_details.quantity) AS quantity_sales,
@@ -143,7 +143,7 @@ GROUP BY Hour;
 ```
 
 -- 8). Join relevant tables to find the category-wise distribution of pizzas --
-```
+``` sql
 SELECT 
     category, COUNT(name)
 FROM
