@@ -274,6 +274,6 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 
 For more content on SQL, data analysis, and other data-related, make sure to follow me on Linkedin:
 
-- **LinkedIn**: [Connect with me professionally](www.linkedin.com/in/tarun-mahor-1735a61a7)
+- **LinkedIn**: [Connect with me professionally](www.linkedin.com/in/tarun-mahor)
 
 Thank you for your support, and I look forward to connecting with you!
